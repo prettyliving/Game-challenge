@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GLITCHLINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        background: black;
+        color: white;
+        font-family: monospace;
+        overflow: hidden;
+      }
+
+      .game-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .player {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: cyan;
+      }
+
+      .line {
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: rgba(0, 255, 150, 0.6);
+      }
+
+      .encrypted {
+        color: #555;
+      }
+
+      .revealed {
+        color: white;
+      }
+
+      .text-container {
+        position: absolute;
+        top: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 2px;
+      }
+
+      .score {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
